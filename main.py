@@ -195,14 +195,20 @@ def main():
     parser.add_argument('-d', '--dryrun', action='store_true', help='dry run without persisting data')
     parser.add_argument('-e', '--exchange', required=True, choices=['binance', 'coinbase'], help='exchange identifier')
     parser.add_argument('-i', '--instruments', type=str, help='comma delimited list of instruments to process')
-    parser.add_argument('--data-dir', default=os.path.expanduser('~/data'), help='path to data directory')
+    parser.add_argument('--data-dir', default=None, help='path to data directory')  # <-- set default to None
     args = parser.parse_args()
 
-    data_dir = os.path.join(args.data_dir, args.exchange)
+    if args.data_dir:
+        base_dir = args.data_dir
+    else:
+        base_dir = os.getcwd()  # <-- current working directory
 
-    if not os.path.isdir(data_dir):
-        parser.error(f'missing directory {data_dir}')
+    data_dir = os.path.join(base_dir, args.exchange)
 
+    if not os.path.exists(data_dir):
+        os.makedirs(data_dir)
+        logging.info(f'Created missing data directory at {data_dir}')
+    
     # Select the appropriate adapter for the chosen exchange
     adapter = Coinbase() if args.exchange == 'coinbase' else Binance()
 
