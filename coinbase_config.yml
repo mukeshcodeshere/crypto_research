@@ -1,0 +1,16 @@
+venue_defs:
+  - name: coinbase
+    id: 4
+    instruments:
+      - symbol: BTC/USD
+        venue_symbol: BTC-USD
+        type: spot
+      - symbol: ETH/USD
+        venue_symbol: ETH-USD
+        type: spot
+      - symbol: SOL/USD
+        venue_symbol: SOL-USD
+        type: spot
+      - symbol: XRP/USD
+        venue_symbol: XRP-USD
+        type: spot
