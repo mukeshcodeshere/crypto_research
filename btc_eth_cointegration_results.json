@@ -1,0 +1,469 @@
+{
+  "research_config": {
+    "symbols": [
+      "BTCUSD",
+      "ETHUSD"
+    ],
+    "base_timeframe": "1D",
+    "significance_level": 0.05,
+    "min_observations": 252
+  },
+  "analysis_timestamp": "2025-09-07T16:31:10.889423",
+  "timeframe_results": {
+    "1H": {
+      "n_observations": 80839,
+      "correlation": 0.8461402425925616,
+      "success_rate": 0.0,
+      "cointegrated_spreads": [],
+      "spread_statistics": {
+        "log": {
+          "formula": "log(P_BTC) - log(P_ETH)",
+          "is_cointegrated": "False",
+          "adf_pvalue": 0.24088936196448002,
+          "adf_statistic": -2.1090545032711185,
+          "mean_reversion_properties": {
+            "half_life_ar1": 506146.59947668953,
+            "mean_reversion_speed": 1.3694583875047329e-06,
+            "half_life_ou": 7482.838927766033,
+            "theta": 9.263157836899761e-05,
+            "autocorr_lag1": 0.9999073727118032,
+            "mean": 3.1921343835850813,
+            "std": 0.5431133029267501,
+            "skewness": 0.44973183086221535,
+            "kurtosis": -0.5922230526500751
+          }
+        },
+        "ratio": {
+          "formula": "P_BTC / P_ETH",
+          "is_cointegrated": "False",
+          "adf_pvalue": 0.13302319361289672,
+          "adf_statistic": -2.431571176311656,
+          "mean_reversion_properties": {
+            "half_life_ou": 5328.453932191124,
+            "theta": 0.00013008410870785455,
+            "autocorr_lag1": 0.9998699243518627,
+            "mean": 28.474582211393244,
+            "std": 17.716962275923553,
+            "skewness": 1.8235737113529038,
+            "kurtosis": 4.586243121217573
+          }
+        },
+        "cointegration": {
+          "formula": "P_BTC - 2093.60 - 19.5907*P_ETH",
+          "is_cointegrated": "False",
+          "adf_pvalue": 0.567641629411883,
+          "adf_statistic": -1.4303519947964232,
+          "mean_reversion_properties": {
+            "half_life_ar1": 113312.68667562882,
+            "mean_reversion_speed": 6.117100219460341e-06,
+            "half_life_ou": 8524.880095433058,
+            "theta": 8.130873077397036e-05,
+            "autocorr_lag1": 0.9999186945746913,
+            "mean": -7.373253599795968e-12,
+            "std": 15505.11564296114,
+            "skewness": 1.7269434258598997,
+            "kurtosis": 4.109700190877649
+          }
+        },
+        "log_normalized": {
+          "formula": "log(P_BTC) - log(P_ETH)",
+          "is_cointegrated": "False",
+          "adf_pvalue": 0.24088936196449717,
+          "adf_statistic": -2.109054503271076,
+          "mean_reversion_properties": {
+            "half_life_ar1": 506146.59947668953,
+            "mean_reversion_speed": 1.369458387504741e-06,
+            "half_life_ou": 7482.8389275866475,
+            "theta": 9.263157837121826e-05,
+            "autocorr_lag1": 0.999907372711801,
+            "mean": 2.3626453490557147e-16,
+            "std": 0.9999999999999999,
+            "skewness": 0.4497318308622148,
+            "kurtosis": -0.5922230526500747
+          }
+        },
+        "cointegration_normalized": {
+          "formula": "P_BTC - 2093.60 - 19.5907*P_ETH",
+          "is_cointegrated": "False",
+          "adf_pvalue": 0.5676416294118894,
+          "adf_statistic": -1.4303519947964098,
+          "mean_reversion_properties": {
+            "half_life_ar1": 113312.68667562882,
+            "mean_reversion_speed": 6.1171002194602645e-06,
+            "half_life_ou": 8524.880095491264,
+            "theta": 8.13087307734152e-05,
+            "autocorr_lag1": 0.9999186945746918,
+            "mean": 0.0,
+            "std": 1.0,
+            "skewness": 1.7269434258599003,
+            "kurtosis": 4.109700190877649
+          }
+        }
+      }
+    },
+    "4H": {
+      "n_observations": 20232,
+      "correlation": 0.8463248303625606,
+      "success_rate": 0.0,
+      "cointegrated_spreads": [],
+      "spread_statistics": {
+        "log": {
+          "formula": "log(P_BTC) - log(P_ETH)",
+          "is_cointegrated": "False",
+          "adf_pvalue": 0.19946769878999127,
+          "adf_statistic": -2.2188712845766876,
+          "mean_reversion_properties": {
+            "half_life_ar1": 10122.41678987267,
+            "mean_reversion_speed": 6.847410686204257e-05,
+            "half_life_ou": 2092.5482309542676,
+            "theta": 0.0003312454978606866,
+            "autocorr_lag1": 0.9996688093578724,
+            "mean": 3.1925927204980575,
+            "std": 0.5432707850974102,
+            "skewness": 0.44796600686052995,
+            "kurtosis": -0.5945040021190149
+          }
+        },
+        "ratio": {
+          "formula": "P_BTC / P_ETH",
+          "is_cointegrated": "False",
+          "adf_pvalue": 0.09904248348319045,
+          "adf_statistic": -2.5714509809269903,
+          "mean_reversion_properties": {
+            "half_life_ou": 1449.5414662043565,
+            "theta": 0.0004781837544633754,
+            "autocorr_lag1": 0.9995219305571668,
+            "mean": 28.48876552700721,
+            "std": 17.721589621931535,
+            "skewness": 1.8205000084220433,
+            "kurtosis": 4.569943630126804
+          }
+        },
+        "cointegration": {
+          "formula": "P_BTC - 2084.43 - 19.5969*P_ETH",
+          "is_cointegrated": "False",
+          "adf_pvalue": 0.456644126087003,
+          "adf_statistic": -1.6507599353121196,
+          "mean_reversion_properties": {
+            "half_life_ou": 2322.5847864200405,
+            "theta": 0.00029843783728056734,
+            "autocorr_lag1": 0.999701606690861,
+            "mean": 8.101659407489335e-12,
+            "std": 15496.60855411397,
+            "skewness": 1.726769982815382,
+            "kurtosis": 4.112550984595374
+          }
+        },
+        "log_normalized": {
+          "formula": "log(P_BTC) - log(P_ETH)",
+          "is_cointegrated": "False",
+          "adf_pvalue": 0.19946769878996973,
+          "adf_statistic": -2.218871284576748,
+          "mean_reversion_properties": {
+            "half_life_ar1": 10122.41678987267,
+            "mean_reversion_speed": 6.847410686204322e-05,
+            "half_life_ou": 2092.5482309598806,
+            "theta": 0.00033124549785979807,
+            "autocorr_lag1": 0.9996688093578731,
+            "mean": -1.629556293953571e-16,
+            "std": 1.0,
+            "skewness": 0.44796600686053056,
+            "kurtosis": -0.594504002119014
+          }
+        },
+        "cointegration_normalized": {
+          "formula": "P_BTC - 2084.43 - 19.5969*P_ETH",
+          "is_cointegrated": "False",
+          "adf_pvalue": 0.4566441260869674,
+          "adf_statistic": -1.6507599353121878,
+          "mean_reversion_properties": {
+            "half_life_ou": 2322.584786420905,
+            "theta": 0.00029843783728045626,
+            "autocorr_lag1": 0.9997016066908612,
+            "mean": 4.495327707458127e-17,
+            "std": 1.0,
+            "skewness": 1.7267699828153817,
+            "kurtosis": 4.112550984595376
+          }
+        }
+      }
+    },
+    "12H": {
+      "n_observations": 6747,
+      "correlation": 0.8465092896301197,
+      "success_rate": 20.0,
+      "cointegrated_spreads": [
+        "ratio"
+      ],
+      "spread_statistics": {
+        "log": {
+          "formula": "log(P_BTC) - log(P_ETH)",
+          "is_cointegrated": "False",
+          "adf_pvalue": 0.17976103275475863,
+          "adf_statistic": -2.2761934671838846,
+          "mean_reversion_properties": {
+            "half_life_ar1": 789.3372266485787,
+            "mean_reversion_speed": 0.0008777527610770473,
+            "half_life_ou": 698.7778225595337,
+            "theta": 0.0009919421569806494,
+            "autocorr_lag1": 0.999008549655011,
+            "mean": 3.192704368734417,
+            "std": 0.5434210557593967,
+            "skewness": 0.44877454464042854,
+            "kurtosis": -0.5874694536784411
+          }
+        },
+        "ratio": {
+          "formula": "P_BTC / P_ETH",
+          "is_cointegrated": "True",
+          "adf_pvalue": 0.04149548180513511,
+          "adf_statistic": -2.9343631114326967,
+          "mean_reversion_properties": {
+            "half_life_ou": 442.9317830895942,
+            "theta": 0.0015649072995507724,
+            "autocorr_lag1": 0.9984363165294011,
+            "mean": 28.495874010373836,
+            "std": 17.74746500547711,
+            "skewness": 1.8319190945818415,
+            "kurtosis": 4.651522342186869
+          }
+        },
+        "cointegration": {
+          "formula": "P_BTC - 2081.17 - 19.5997*P_ETH",
+          "is_cointegrated": "False",
+          "adf_pvalue": 0.574760654875077,
+          "adf_statistic": -1.4156294453661138,
+          "mean_reversion_properties": {
+            "half_life_ar1": 3454.97994429408,
+            "mean_reversion_speed": 0.0002006025117011616,
+            "half_life_ou": 734.506085851211,
+            "theta": 0.0009436915417203993,
+            "autocorr_lag1": 0.9990567535951078,
+            "mean": 5.10729735597639e-12,
+            "std": 15499.470285869638,
+            "skewness": 1.7241394086942912,
+            "kurtosis": 4.107676901572589
+          }
+        },
+        "log_normalized": {
+          "formula": "log(P_BTC) - log(P_ETH)",
+          "is_cointegrated": "False",
+          "adf_pvalue": 0.17976103275475153,
+          "adf_statistic": -2.2761934671839064,
+          "mean_reversion_properties": {
+            "half_life_ar1": 789.3372266485787,
+            "mean_reversion_speed": 0.0008777527610770498,
+            "half_life_ou": 698.7778225606296,
+            "theta": 0.0009919421569790936,
+            "autocorr_lag1": 0.9990085496550121,
+            "mean": -7.0769930106830785e-16,
+            "std": 1.0,
+            "skewness": 0.44877454464043065,
+            "kurtosis": -0.5874694536784402
+          }
+        },
+        "cointegration_normalized": {
+          "formula": "P_BTC - 2081.17 - 19.5997*P_ETH",
+          "is_cointegrated": "False",
+          "adf_pvalue": 0.5747606548750773,
+          "adf_statistic": -1.415629445366113,
+          "mean_reversion_properties": {
+            "half_life_ar1": 3454.97994429408,
+            "mean_reversion_speed": 0.0002006025117011608,
+            "half_life_ou": 734.506085851211,
+            "theta": 0.0009436915417203993,
+            "autocorr_lag1": 0.9990567535951076,
+            "mean": 2.9487470877846165e-17,
+            "std": 0.9999999999999999,
+            "skewness": 1.7241394086942914,
+            "kurtosis": 4.1076769015725905
+          }
+        }
+      }
+    },
+    "1D": {
+      "n_observations": 3374,
+      "correlation": 0.8464679263811632,
+      "success_rate": 0.0,
+      "cointegrated_spreads": [],
+      "spread_statistics": {
+        "log": {
+          "formula": "log(P_BTC) - log(P_ETH)",
+          "is_cointegrated": "False",
+          "adf_pvalue": 0.09045940662976498,
+          "adf_statistic": -2.6124099812372004,
+          "mean_reversion_properties": {
+            "half_life_ar1": 331.1511716375917,
+            "mean_reversion_speed": 0.0020909551806364995,
+            "half_life_ou": 316.70683565663273,
+            "theta": 0.002188608209617053,
+            "autocorr_lag1": 0.9978137850470453,
+            "mean": 3.192426191551619,
+            "std": 0.543181288864741,
+            "skewness": 0.4472760808982068,
+            "kurtosis": -0.5909508665337233
+          }
+        },
+        "ratio": {
+          "formula": "P_BTC / P_ETH",
+          "is_cointegrated": "False",
+          "adf_pvalue": 0.10003042372311233,
+          "adf_statistic": -2.566912417287401,
+          "mean_reversion_properties": {
+            "half_life_ou": 235.26150453800534,
+            "theta": 0.0029462838891603314,
+            "autocorr_lag1": 0.9970580521457755,
+            "mean": 28.482377867830365,
+            "std": 17.71638241445201,
+            "skewness": 1.8231783777101134,
+            "kurtosis": 4.594826734403338
+          }
+        },
+        "cointegration": {
+          "formula": "P_BTC - 2082.70 - 19.6005*P_ETH",
+          "is_cointegrated": "False",
+          "adf_pvalue": 0.3269791424472994,
+          "adf_statistic": -1.9108395707993153,
+          "mean_reversion_properties": {
+            "half_life_ar1": 1554.0940550690102,
+            "mean_reversion_speed": 0.0004459142126706771,
+            "half_life_ou": 351.9975284614334,
+            "theta": 0.0019691819530371787,
+            "autocorr_lag1": 0.9980327556137293,
+            "mean": 8.004847262551535e-12,
+            "std": 15504.812101513455,
+            "skewness": 1.7213304845389858,
+            "kurtosis": 4.1034950159165104
+          }
+        },
+        "log_normalized": {
+          "formula": "log(P_BTC) - log(P_ETH)",
+          "is_cointegrated": "False",
+          "adf_pvalue": 0.09045940662976198,
+          "adf_statistic": -2.6124099812372146,
+          "mean_reversion_properties": {
+            "half_life_ar1": 331.1511716375917,
+            "mean_reversion_speed": 0.0020909551806365,
+            "half_life_ou": 316.70683565666496,
+            "theta": 0.0021886082096168307,
+            "autocorr_lag1": 0.9978137850470453,
+            "mean": -5.054245897522941e-16,
+            "std": 1.0,
+            "skewness": 0.44727608089820836,
+            "kurtosis": -0.5909508665337215
+          }
+        },
+        "cointegration_normalized": {
+          "formula": "P_BTC - 2082.70 - 19.6005*P_ETH",
+          "is_cointegrated": "False",
+          "adf_pvalue": 0.32697914244727894,
+          "adf_statistic": -1.9108395707993595,
+          "mean_reversion_properties": {
+            "half_life_ar1": 1554.0940550690102,
+            "mean_reversion_speed": 0.00044591421267067653,
+            "half_life_ou": 351.9975284614533,
+            "theta": 0.001969181953037067,
+            "autocorr_lag1": 0.9980327556137292,
+            "mean": 3.790684423142206e-17,
+            "std": 1.0000000000000002,
+            "skewness": 1.721330484538985,
+            "kurtosis": 4.103495015916508
+          }
+        }
+      }
+    },
+    "3D": {
+      "error": "Insufficient data: 0 < 252",
+      "n_observations": 0
+    },
+    "1W": {
+      "n_observations": 482,
+      "correlation": 0.8473861436990133,
+      "success_rate": 0.0,
+      "cointegrated_spreads": [],
+      "spread_statistics": {
+        "log": {
+          "formula": "log(P_BTC) - log(P_ETH)",
+          "is_cointegrated": "False",
+          "adf_pvalue": 0.16804728410396158,
+          "adf_statistic": -2.3122507925409357,
+          "mean_reversion_properties": {
+            "half_life_ar1": 60.22862075946564,
+            "mean_reversion_speed": 0.0114426306243226,
+            "half_life_ou": 40.32574139846187,
+            "theta": 0.017188702712515627,
+            "autocorr_lag1": 0.9829581802579666,
+            "mean": 3.1909466755755194,
+            "std": 0.5438480670488136,
+            "skewness": 0.45852473520831405,
+            "kurtosis": -0.5870729091084477
+          }
+        },
+        "ratio": {
+          "formula": "P_BTC / P_ETH",
+          "is_cointegrated": "False",
+          "adf_pvalue": 0.1243762010001544,
+          "adf_statistic": -2.4644076424063543,
+          "mean_reversion_properties": {
+            "half_life_ar1": 76.47386667016842,
+            "mean_reversion_speed": 0.009022890968843395,
+            "half_life_ou": 29.85197172240942,
+            "theta": 0.02321947732650471,
+            "autocorr_lag1": 0.9770480203518351,
+            "mean": 28.460013518324008,
+            "std": 17.77911822906215,
+            "skewness": 1.8453982575597878,
+            "kurtosis": 4.757939928278064
+          }
+        },
+        "cointegration": {
+          "formula": "P_BTC - 2037.80 - 19.6294*P_ETH",
+          "is_cointegrated": "False",
+          "adf_pvalue": 0.29058021355275826,
+          "adf_statistic": -1.990893472192541,
+          "mean_reversion_properties": {
+            "half_life_ou": 43.19258855493202,
+            "theta": 0.01604782680895371,
+            "autocorr_lag1": 0.9840802535114931,
+            "mean": 5.5550879709948144e-12,
+            "std": 15500.63706286919,
+            "skewness": 1.718711920799893,
+            "kurtosis": 4.107720729125398
+          }
+        },
+        "log_normalized": {
+          "formula": "log(P_BTC) - log(P_ETH)",
+          "is_cointegrated": "False",
+          "adf_pvalue": 0.1680472841039612,
+          "adf_statistic": -2.3122507925409366,
+          "mean_reversion_properties": {
+            "half_life_ar1": 60.22862075946564,
+            "mean_reversion_speed": 0.011442630624322594,
+            "half_life_ou": 40.32574139846054,
+            "theta": 0.017188702712516192,
+            "autocorr_lag1": 0.982958180257966,
+            "mean": -3.2431411175772206e-16,
+            "std": 1.0,
+            "skewness": 0.4585247352083148,
+            "kurtosis": -0.5870729091084463
+          }
+        },
+        "cointegration_normalized": {
+          "formula": "P_BTC - 2037.80 - 19.6294*P_ETH",
+          "is_cointegrated": "False",
+          "adf_pvalue": 0.2905802135527744,
+          "adf_statistic": -1.9908934721925042,
+          "mean_reversion_properties": {
+            "half_life_ou": 43.19258855493111,
+            "theta": 0.016047826808954047,
+            "autocorr_lag1": 0.9840802535114926,
+            "mean": -2.9483101068883825e-17,
+            "std": 1.0,
+            "skewness": 1.7187119207998924,
+            "kurtosis": 4.107720729125393
+          }
+        }
+      }
+    }
+  }
+}
